@@ -25,9 +25,13 @@ interface StatusBar {
     overlaysWebView(isOverlay: boolean): void;
 
     /**
-    * Use the default statusbar (dark text, for light backgrounds).
-    */
+    * Use the default statusbar (dark text, for light backgrounds). Could change to light text depending if device is using system's Dark or Light theme. To force dark text use StatusBar.styleDarkContent instead.    */
     styleDefault(): void;
+
+    /**
+    * Use the darkContent statusbar (dark text, for light backgrounds).
+    */
+    styleDarkContent(): void;
 
     /**
     * Use the lightContent statusbar (light text, for dark backgrounds).

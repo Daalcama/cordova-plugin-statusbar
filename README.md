@@ -117,6 +117,7 @@ Although in the global scope, it is not available until after the `deviceready` 
 
 - StatusBar.overlaysWebView
 - StatusBar.styleDefault
+- StatusBar.styleDarkContent
 - StatusBar.styleLightContent
 - StatusBar.styleBlackTranslucent
 - StatusBar.styleBlackOpaque
@@ -163,10 +164,23 @@ Quick Example
 StatusBar.styleDefault
 =================
 
-Use the default statusbar (dark text, for light backgrounds).
+Use the default statusbar (dark text, for light backgrounds). Could change to light text depending if device is using system's Dark or Light theme. To force dark text use StatusBar.styleDarkContent instead.
 
     StatusBar.styleDefault();
 
+Supported Platforms
+-------------------
+
+- iOS 13+
+- Android 6+
+- Windows
+
+StatusBar.styleDarkContent
+=================
+
+Use the darkContent statusbar (dark text, for light backgrounds). 
+
+    StatusBar.styleDarkContent();
 
 Supported Platforms
 -------------------

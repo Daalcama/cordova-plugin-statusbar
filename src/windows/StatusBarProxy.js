@@ -73,6 +73,13 @@ module.exports = {
         }
     },
 
+    styleDarkContent: function () {
+        // light text ( to be used on a dark background )
+        if (isSupported()) {
+            getViewStatusBar().foregroundColor = { a: 0, r: 0, g: 0, b: 0 };
+        }
+    },
+
     styleLightContent: function () {
         // light text ( to be used on a dark background )
         if (isSupported()) {

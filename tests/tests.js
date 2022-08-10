@@ -50,6 +50,9 @@ exports.defineAutoTests = function () {
             expect(window.StatusBar.styleDefault).toBeDefined();
             expect(typeof window.StatusBar.styleDefault).toBe('function');
 
+            expect(window.StatusBar.styleDarkContent).toBeDefined();
+            expect(typeof window.StatusBar.styleDarkContent).toBe('function');
+
             expect(window.StatusBar.styleLightContent).toBeDefined();
             expect(typeof window.StatusBar.styleLightContent).toBe('function');
 

@@ -180,6 +180,16 @@ public class StatusBar extends CordovaPlugin {
             return true;
         }
 
+        if ("styleDarkContent".equals(action)) {
+            this.cordova.getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    setStatusBarStyle("default");
+                }
+            });
+            return true;
+        }
+
         if ("styleLightContent".equals(action)) {
             this.cordova.getActivity().runOnUiThread(new Runnable() {
                 @Override
